@@ -25,7 +25,7 @@
 :warning: Este mod es solo para la [**Aplicacion de escritorio**](https://www.spotify.com/download/windows/) de Spotify en Windows y no para la versión de **Microsoft Store**.
 
 ### Instalación / Actualización:
-* Simplemente descargue y ejecute [Spotifysinanuncios.bat](https://raw.githack.com/mrpond/BlockTheSpot/master/BlockTheSpot.bat)  
+* Simplemente descargue y ejecute [Spotifysinanuncios.bat](https://raw.githack.com/JaimeTR/Spotifysinanuncios/main/Spotifysinanuncios.bat)  
 
 o
 
