@@ -2,12 +2,12 @@
 
 
 <center>
-    <h1 align="center">Spotify sin anuncios</h1>
-    <h4 align="center">A multi-purpose adblocker and skip-bypass for the <strong>Windows</strong> Spotify desktop application.</h4>
-    <h5 align="center">Please support Spotify by purchasing premium</h5>
+    <h1 align="center">Spotify sin Anuncios</h1>
+    <h4 align="center">Bloqueador de anuncios multipropósito y omisión para la aplicación de Spotify de <strong>Windows</strong></h4>
+    <h5 align="center">Apoya a Spotify comprando Premium</h5>
     <p align="center">
-        <strong>Last updated:</strong> 2 October 2021<br>
-        <strong>Last tested version:</strong> 1.1.69.612.gb7409abc
+        <strong>Última actualización:</strong> 4 October 2021<br>
+        <strong>Última versión probada:</strong> 1.0
     </p> 
 </center>
 
