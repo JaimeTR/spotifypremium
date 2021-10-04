@@ -11,33 +11,33 @@
     </p> 
 </center>
 
-#### Important checks before installing:
-0. Update Windows, update Spotify and update BlockTheSpot
-1. Go to "Windows Security" -> "Virus & Threat Protection"
-2. Click "Allowed threats" -> "Remove all allowed threats"
+#### Comprobaciones importantes antes de la instalación:
+1. Actualiza Windows, actualiza Spotify y actualiza Spotifysinanuncios
+2. Vaya a "Seguridad de Windows" -> "Protección contra virus y amenazas"
+3. Haga clic en "Amenazas permitidas" -> "Eliminar todas las amenazas permitidas"
 
-### Features:
-* Blocks all banner/video/audio ads within the app
-* Retains friend, vertical video and radio functionality
-* Unlocks the skip function for any track
-* Now supports the new Alpha version (New UI)
+### Características:
+* Bloquea todos los anuncios de banner / video / audio dentro de la aplicación
+* Conserva la funcionalidad de amigo, video vertical y radio
+* Desbloquea la función de salto para cualquier pista
+* Ahora es compatible con la nueva versión Alpha (Nueva interfaz de usuario)
 
-:warning: This mod is for the [**Desktop Application**](https://www.spotify.com/download/windows/) of Spotify on Windows only and **not the Microsoft Store version**.
+:warning: Este mod es solo para la [**Aplicacion de escritorio**](https://www.spotify.com/download/windows/) de Spotify en Windows y no para la versión de **Microsoft Store**.
 
-### Installation/Update:
-* Just download and run [BlockTheSpot.bat](https://raw.githack.com/mrpond/BlockTheSpot/master/BlockTheSpot.bat)  
+### Instalación / Actualización:
+* Simplemente descargue y ejecute [Spotifysinanuncios.bat](https://raw.githack.com/mrpond/BlockTheSpot/master/BlockTheSpot.bat)  
 
-or
+o
 
-* Run The following command in PowerShell:
+* Ejecute el siguiente comando en PowerShell:
 ```ps1
-Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/mrpond/BlockTheSpot/master/install.ps1' | Invoke-Expression
+Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/JaimeTR/Spotifysinanuncios/main/install.ps1' | Invoke-Expression
 ```
 
-or
+o
 
-1. Browse to your Spotify installation folder `%APPDATA%\Spotify`
-2. Download `chrome_elf.zip` from [releases](https://github.com/mrpond/BlockTheSpot/releases)
+1. Busque su carpeta de instalación de Spotify `%APPDATA%\Spotify`
+2. Descarga  `chrome_elf.zip` de [releases](https://github.com/JaimeTR/Spotifysinanuncios/releases)
 3. Unzip and replace `chrome_elf.dll` and `config.ini` 
 
 ### Uninstall:
