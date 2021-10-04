@@ -7,7 +7,7 @@
     <h5 align="center">Apoya a Spotify comprando Premium</h5>
     <p align="center">
         <strong>Última actualización:</strong> 4 Octubre 2021<br>
-        <strong>Última versión probada:</strong> v1.0
+        <strong>Última versión probada:</strong> 1.1.68.632.g2b11de83
     </p> 
 </center>
 
