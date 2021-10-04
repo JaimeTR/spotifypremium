@@ -38,15 +38,15 @@ o
 
 1. Busque su carpeta de instalación de Spotify `%APPDATA%\Spotify`
 2. Descarga  `chrome_elf.zip` de [releases](https://github.com/JaimeTR/Spotifysinanuncios/releases)
-3. Unzip and replace `chrome_elf.dll` and `config.ini` 
+3. Descomprima y reemplace `chrome_elf.dll` y `config.ini` 
 
-### Uninstall:
-* Just run uninstall.bat
-or
-* Reinstall Spotify 
+### Desinstalar:
+* Simplemente ejecute uninstall.bat 
+o
+* Reinstalar Spotify 
 
-### Known Issues:  
-* You may face issue [#150](https://github.com/mrpond/BlockTheSpot/issues/150). Can be fixed by enabling the experimental feature when using `BlockTheSpot.bat`.    
+### Problemas conocidos: 
+* Puede enfrentar el problema [#150](https://github.com/mrpond/BlockTheSpot/issues/150). Se puede solucionar habilitando la función experimental cuando se usa `Spotifysinanuncios.bat`.    
 * We support last 2 version of Spotify (latest + previous) only. Please check it before opening an issue.
 
 ### Additional Notes:  
