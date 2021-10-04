@@ -1,13 +1,8 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/31l6ynm0a1fhr2vs/branch/master?svg=true)](https://ci.appveyor.com/project/mrpond/blockthespot/branch/master)  [![Discord](https://discord.com/api/guilds/807273906872123412/widget.png)](https://discord.gg/p43cusgUPm)
+[![Build status](https://ci.appveyor.com/api/projects/status/31l6ynm0a1fhr2vs/branch/master?svg=true)](https://ci.appveyor.com/project/JaimeTR/spotifysinanuncios/branch/master)  [![Discord](https://discord.com/api/guilds/807273906872123412/widget.png)](https://discord.gg/)
+
 
 <center>
-    <h3 align="center"><a href="https://en.wikipedia.org/wiki/2020_Thai_protests">Support the 2020 Thailand & 2021 Myanmar protests</a></h3>
-    <h3 align="center">Help me stop the dictatorship in Thailand and Myanmar!</h3>
-    <h3 align="center">Southeast Asia strong together!</h3>
-</center>
-
-<center>
-    <h1 align="center">BlockTheSpot</h1>
+    <h1 align="center">Spotifysinanuncios</h1>
     <h4 align="center">A multi-purpose adblocker and skip-bypass for the <strong>Windows</strong> Spotify desktop application.</h4>
     <h5 align="center">Please support Spotify by purchasing premium</h5>
     <p align="center">
