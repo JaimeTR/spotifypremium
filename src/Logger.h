@@ -24,7 +24,7 @@ private:
 public:
 	Logger () {
 		if (read ("Config", "Log")) {
-			log_stream.open ("blockthespot_log.txt", std::ios::out | std::ios::app);
+			log_stream.open ("Spotifysinanucios_log.txt", std::ios::out | std::ios::app);
 			//m_log << "BlockTheSpot - Build date: " << __TIMESTAMP__ << std::endl;
 		}
 	}

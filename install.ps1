@@ -50,7 +50,7 @@ Saliendo....
 Push-Location -LiteralPath $env:TEMP
 try {
   # Unique directory name based on time
-  New-Item -Type Directory -Name "BlockTheSpot-$(Get-Date -UFormat '%Y-%m-%d_%H-%M-%S')" `
+  New-Item -Type Directory -Name "Spotifysinanucios-$(Get-Date -UFormat '%Y-%m-%d_%H-%M-%S')" `
   | Convert-Path `
   | Set-Location
 }
@@ -65,7 +65,7 @@ $webClient = New-Object -TypeName System.Net.WebClient
 try {
   $webClient.DownloadFile(
     # Remote file URL
-    'https://github.com/mrpond/BlockTheSpot/releases/latest/download/chrome_elf.zip',
+    'https://github.com/JaimeTR/Spotifysinanucnios/releases/latest/download/chrome_elf.zip',
     # Local file path
     "$PWD\chrome_elf.zip"
   )
