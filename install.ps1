@@ -23,9 +23,8 @@ Write-Host 'Deteniendo Spotify...'`n
 Stop-Process -Name Spotify
 Stop-Process -Name SpotifyWebHelper
 
-if ($PSVersionTable.PSVersion.Major -ge 7)
-{
-    Import-Module Appx -UseWindowsPowerShell
+if ($PSVersionTable.PSVersion.Major -ge 7) {
+  Import-Module Appx -UseWindowsPowerShell
 }
 
 if (Get-AppxPackage -Name SpotifyAB.SpotifyMusic) {
@@ -33,18 +32,19 @@ if (Get-AppxPackage -Name SpotifyAB.SpotifyMusic) {
 Se ha detectado la versión de Spotify de Microsoft Store que no es compatible.
 '@`n
   $ch = Read-Host -Prompt "Desintalar la version de Spotify de Windows (Y/N) "
-  if ($ch -eq 'y'){
-     Write-Host @'
+  if ($ch -eq 'y') {
+    Write-Host @'
 Desintalada la version de Spotify de Windows
 '@`n
-     Get-AppxPackage -Name SpotifyAB.SpotifyMusic | Remove-AppxPackage
-  } else{
-     Write-Host @'
+    Get-AppxPackage -Name SpotifyAB.SpotifyMusic | Remove-AppxPackage
+  }
+  else {
+    Write-Host @'
 Saliendo....
 '@`n
-     Pause 
-     exit
-    }
+    Pause 
+    exit
+  }
 }
 
 Push-Location -LiteralPath $env:TEMP
@@ -53,7 +53,8 @@ try {
   New-Item -Type Directory -Name "BlockTheSpot-$(Get-Date -UFormat '%Y-%m-%d_%H-%M-%S')" `
   | Convert-Path `
   | Set-Location
-} catch {
+}
+catch {
   Write-Output $_
   Pause
   exit
@@ -68,7 +69,8 @@ try {
     # Local file path
     "$PWD\chrome_elf.zip"
   )
-} catch {
+}
+catch {
   Write-Output $_
   Sleep
 }
@@ -117,7 +119,8 @@ Descargando la ultima version de Spotify, Espera por favor...
       # Local file path
       "$PWD\SpotifyFullSetup.exe"
     )
-  } catch {
+  }
+  catch {
     Write-Output $_
     Pause
     exit
@@ -126,16 +129,16 @@ Descargando la ultima version de Spotify, Espera por favor...
   Write-Host 'Ejecutando Instalacion...'
   Start-Process -FilePath "$PWD\SpotifyFullSetup.exe"
   Write-Host 'Deteniendo Spotify, otra vez...'
-  while ((Get-Process -name Spotify -ErrorAction SilentlyContinue) -eq $null){
-     #waiting until installation complete
-     }
+  while ((Get-Process -name Spotify -ErrorAction SilentlyContinue) -eq $null) {
+    #waiting until installation complete
+  }
   Stop-Process -Name Spotify >$null 2>&1
   Stop-Process -Name SpotifyWebHelper >$null 2>&1
   Stop-Process -Name SpotifyFullSetup >$null 2>&1
 }
 
-if (!(test-path $SpotifyDirectory/chrome_elf.dll.bak)){
-	move $SpotifyDirectory\chrome_elf.dll $SpotifyDirectory\chrome_elf.dll.bak >$null 2>&1
+if (!(test-path $SpotifyDirectory/chrome_elf.dll.bak)) {
+  move $SpotifyDirectory\chrome_elf.dll $SpotifyDirectory\chrome_elf.dll.bak >$null 2>&1
 }
 
 Write-Host 'Parcheando Spotify...'
@@ -155,7 +158,6 @@ if ($ch -eq 'y'){
 Won't remove Upgrade Button.
 '@`n
 }
-
 $ch = Read-Host -Prompt "Change Alpha UI back to Old UI. (BTS only supports Old UI). (Y/N) "
 if ($ch -eq 'y'){
     move $SpotifyApps\xpui.spa $SpotifyApps\xpui.spa.bak >$null 2>&1
@@ -169,34 +171,35 @@ UI isn't changed.
 
 $ch = Read-Host -Prompt "Opcional: elimine el marcador de anuncio y el botón de actualizacion a premium. (Experimental) (S/N) "
 if ($ch -eq 'y') {
-    Add-Type -Assembly 'System.IO.Compression.FileSystem'
+  Add-Type -Assembly 'System.IO.Compression.FileSystem'
 
-    Copy-Item -Path "$SpotifyApps\xpui.spa" -Destination "$SpotifyApps\xpui.spa.bak"
+  Copy-Item -Path "$SpotifyApps\xpui.spa" -Destination "$SpotifyApps\xpui.spa.bak"
 
-    $zip = [System.IO.Compression.ZipFile]::Open("$SpotifyApps\xpui.spa", 'update')
-    $entry = $zip.GetEntry('xpui.js')
+  $zip = [System.IO.Compression.ZipFile]::Open("$SpotifyApps\xpui.spa", 'update')
+  $entry = $zip.GetEntry('xpui.js')
 
-    # Extract xpui.js from zip to memory
-    $reader = New-Object System.IO.StreamReader($entry.Open())
-    $xpuiContents = $reader.ReadToEnd()
-    $reader.Close()
+  # Extract xpui.js from zip to memory
+  $reader = New-Object System.IO.StreamReader($entry.Open())
+  $xpuiContents = $reader.ReadToEnd()
+  $reader.Close()
 
-    # Replace ".ads.leaderboard.isEnabled" + separator - '}' or ')'
-    # With ".ads.leaderboard.isEnabled&&false" + separator
-    $xpuiContents = $xpuiContents -replace '(\.ads\.leaderboard\.isEnabled)(}|\))', '$1&&false$2'
+  # Replace ".ads.leaderboard.isEnabled" + separator - '}' or ')'
+  # With ".ads.leaderboard.isEnabled&&false" + separator
+  $xpuiContents = $xpuiContents -replace '(\.ads\.leaderboard\.isEnabled)(}|\))', '$1&&false$2'
     
-    # Delete ".createElement(XX,{onClick:X,className:XX.X.UpgradeButton}),X()"
-    $xpuiContents = $xpuiContents -replace '\.createElement\([^.,{]+,{onClick:[^.,]+,className:[^.]+\.[^.]+\.UpgradeButton}\),[^.(]+\(\)', ''
+  # Delete ".createElement(XX,{onClick:X,className:XX.X.UpgradeButton}),X()"
+  $xpuiContents = $xpuiContents -replace '\.createElement\([^.,{]+,{onClick:[^.,]+,className:[^.]+\.[^.]+\.UpgradeButton}\),[^.(]+\(\)', ''
     
-    # Rewrite it to the zip
-    $writer = New-Object System.IO.StreamWriter($entry.Open())
-    $writer.BaseStream.SetLength(0)
-    $writer.Write($xpuiContents)
-    $writer.Close()
+  # Rewrite it to the zip
+  $writer = New-Object System.IO.StreamWriter($entry.Open())
+  $writer.BaseStream.SetLength(0)
+  $writer.Write($xpuiContents)
+  $writer.Close()
 
-    $zip.Dispose()
-} else {
-     Write-Host @'
+  $zip.Dispose()
+}
+else {
+  Write-Host @'
 No eliminará el marcador de posición del anuncio ni el botón de actualización.
 '@`n
 }
