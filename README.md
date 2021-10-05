@@ -12,9 +12,7 @@
 </center>
 
 #### Comprobaciones importantes antes de la instalación:
-1. Actualiza Windows, actualiza Spotify y actualiza Spotifysinanuncios
-2. Vaya a "Seguridad de Windows" -> "Protección contra virus y amenazas"
-3. Haga clic en "Amenazas permitidas" -> "Eliminar todas las amenazas permitidas"
+1. Actualiza Spotify y descarga la version actualizada de Spotifysinanuncios
 
 ### Características:
 * Bloquea todos los anuncios de banner / video / audio dentro de la aplicación
@@ -25,7 +23,7 @@
 :warning: Este mod es solo para la [**Aplicacion de escritorio**](https://www.spotify.com/download/windows/) de Spotify en Windows y no para la versión de **Microsoft Store**.
 
 ### Instalación / Actualización:
-* Simplemente descargue y ejecute [Spotifysinanuncios.bat](https://raw.githack.com/JaimeTR/Spotifysinanuncios/main/Spotifysinanuncios.bat)  
+* Simplemente descargue el [Zip](https://github.com/JaimeTR/Spotifysinanuncios.git)y ejecute [Spotifysinanuncios.bat]  
 
 o
 
