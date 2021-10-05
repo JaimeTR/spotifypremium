@@ -169,7 +169,7 @@ UI isn't changed.
 }
 #>
 
-$ch = Read-Host -Prompt "Opcional: elimine el marcador de anuncio y el botón de actualizacion a premium. (Experimental) (S/N) "
+$ch = Read-Host -Prompt "Eliminar el marcador de anuncio y el botón de actualizacion a premium. (Y/N) "
 if ($ch -eq 'y') {
   Add-Type -Assembly 'System.IO.Compression.FileSystem'
 
