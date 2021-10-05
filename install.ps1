@@ -4,7 +4,7 @@ $PSDefaultParameterValues['Stop-Process:ErrorAction'] = 'SilentlyContinue'
 write-host @'
 ***************** 
 @mrpond message:
-#Visitame en instagram y sigueme jaimetr_
+Instagram: jaimetr_
 Github: JaimeTR
 ***************** 
 '@
@@ -50,7 +50,7 @@ Saliendo....
 Push-Location -LiteralPath $env:TEMP
 try {
   # Unique directory name based on time
-  New-Item -Type Directory -Name "Spotifysinanucios-$(Get-Date -UFormat '%Y-%m-%d_%H-%M-%S')" `
+  New-Item -Type Directory -Name "Spotifysinanuncios-$(Get-Date -UFormat '%Y-%m-%d_%H-%M-%S')" `
   | Convert-Path `
   | Set-Location
 }
@@ -65,7 +65,7 @@ $webClient = New-Object -TypeName System.Net.WebClient
 try {
   $webClient.DownloadFile(
     # Remote file URL
-    'https://github.com/JaimeTR/Spotifysinanucnios/releases/latest/download/chrome_elf.zip',
+    'https://github.com/JaimeTR/Spotifysinanuncios/releases/latest/download/chrome_elf.zip',
     # Local file path
     "$PWD\chrome_elf.zip"
   )
@@ -78,7 +78,7 @@ catch {
 try {
   $webClient.DownloadFile(
     # Remote file URL
-    'https://github.com/mrpond/BlockTheSpot/files/5969916/zlink.zip',
+    'https://github.com/JaimeTR/Spotifysinanuncios/files/5969916/zlink.zip',
     # Local file path
     "$PWD\zlink.zip"
   )
@@ -89,7 +89,7 @@ try {
 try {
   $webClient.DownloadFile(
     # Remote file URL
-    'https://github.com/mrpond/BlockTheSpot/files/6234124/xpui.zip',
+    'https://github.com/JaimeTR/Spotifysinanuncios/files/6234124/xpui.zip',
     # Local file path
     "$PWD\xpui.zip"
   )
