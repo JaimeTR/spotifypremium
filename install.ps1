@@ -3,15 +3,14 @@ $PSDefaultParameterValues['Stop-Process:ErrorAction'] = 'SilentlyContinue'
 
 write-host @'
 ***************** 
-@mrpond message:
-#Thailand #ThaiProtest #ThailandProtest #freeYOUTH
-Please retweet these hashtag, help me stop dictator government!
+Instagram jaimetr_
+Github: JaimeTR
 ***************** 
 '@
 
 write-host @'
 ***************** 
-Author: @Nuzair46
+Author: @JaimeTR
 ***************** 
 '@
 
@@ -19,7 +18,7 @@ $SpotifyDirectory = "$env:APPDATA\Spotify"
 $SpotifyExecutable = "$SpotifyDirectory\Spotify.exe"
 $SpotifyApps = "$SpotifyDirectory\Apps"
 
-Write-Host 'Stopping Spotify...'`n
+Write-Host 'Deteniendo Spotify...'`n
 Stop-Process -Name Spotify
 Stop-Process -Name SpotifyWebHelper
 
