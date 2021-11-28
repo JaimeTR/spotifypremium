@@ -4,14 +4,14 @@ $PSDefaultParameterValues['Stop-Process:ErrorAction'] = 'SilentlyContinue'
 write-host @'
 ***************** 
 @mrpond message:
-Instagram jaimetr_
-Github: JaimeTR
+#Thailand #ThaiProtest #ThailandProtest #freeYOUTH
+Please retweet these hashtag, help me stop dictator government!
 ***************** 
 '@
 
 write-host @'
 ***************** 
-Author: @ JaimeTR
+Author: @Nuzair46
 ***************** 
 '@
 
@@ -19,32 +19,32 @@ $SpotifyDirectory = "$env:APPDATA\Spotify"
 $SpotifyExecutable = "$SpotifyDirectory\Spotify.exe"
 $SpotifyApps = "$SpotifyDirectory\Apps"
 
-Write-Host 'Deteniendo Spotify...'`n
+Write-Host 'Stopping Spotify...'`n
 Stop-Process -Name Spotify
 Stop-Process -Name SpotifyWebHelper
 
-if ($PSVersionTable.PSVersion.Major -ge 7) {
-  Import-Module Appx -UseWindowsPowerShell
+if ($PSVersionTable.PSVersion.Major -ge 7)
+{
+    Import-Module Appx -UseWindowsPowerShell
 }
 
 if (Get-AppxPackage -Name SpotifyAB.SpotifyMusic) {
   Write-Host @'
-Se ha detectado la versión de Spotify de Microsoft Store que no es compatible.
+The Microsoft Store version of Spotify has been detected which is not supported.
 '@`n
   $ch = Read-Host -Prompt "Desintalar la version de Spotify de Windows (Y/N) "
-  if ($ch -eq 'y') {
-    Write-Host @'
-Desintalada la version de Spotify de Windows
+  if ($ch -eq 'y'){
+     Write-Host @'
+Desintalando Spotify.
 '@`n
-    Get-AppxPackage -Name SpotifyAB.SpotifyMusic | Remove-AppxPackage
-  }
-  else {
-    Write-Host @'
-Saliendo....
+     Get-AppxPackage -Name SpotifyAB.SpotifyMusic | Remove-AppxPackage
+  } else{
+     Write-Host @'
+Saliendo...
 '@`n
-    Pause 
-    exit
-  }
+     Pause 
+     exit
+    }
 }
 
 Push-Location -LiteralPath $env:TEMP
@@ -53,14 +53,13 @@ try {
   New-Item -Type Directory -Name "BlockTheSpot-$(Get-Date -UFormat '%Y-%m-%d_%H-%M-%S')" `
   | Convert-Path `
   | Set-Location
-}
-catch {
+} catch {
   Write-Output $_
   Pause
   exit
 }
 
-Write-Host 'Descargando el utlimo parche (chrome_elf.zip)...'`n
+Write-Host 'Downloading latest patch (chrome_elf.zip)...'`n
 $webClient = New-Object -TypeName System.Net.WebClient
 try {
   $webClient.DownloadFile(
@@ -69,8 +68,7 @@ try {
     # Local file path
     "$PWD\chrome_elf.zip"
   )
-}
-catch {
+} catch {
   Write-Output $_
   Sleep
 }
@@ -107,9 +105,23 @@ Expand-Archive -Force -LiteralPath "$PWD\xpui.zip" -DestinationPath $PWD
 Remove-Item -LiteralPath "$PWD\xpui.zip"
 #>
 $spotifyInstalled = (Test-Path -LiteralPath $SpotifyExecutable)
-if (-not $spotifyInstalled) {
+$update = $false
+if ($spotifyInstalled) {
+  $ch = Read-Host -Prompt "Opcional: actualice Spotify a la última versión. (Puede que ya esté actualizado). (Y/N)"
+  if ($ch -eq 'y') {
+	$update = $true
+  } else {
+    Write-Host @'
+No intentaré actualizar Spotify.
+'@
+  }
+} else {
   Write-Host @'
-No se detecto la instalacion nde Spotify.
+No se detectó la instalación de Spotify.
+'@
+}
+if (-not $spotifyInstalled -or $update) {
+  Write-Host @'
 Descargando la ultima version de Spotify, Espera por favor...
 '@
   try {
@@ -119,8 +131,7 @@ Descargando la ultima version de Spotify, Espera por favor...
       # Local file path
       "$PWD\SpotifyFullSetup.exe"
     )
-  }
-  catch {
+  } catch {
     Write-Output $_
     Pause
     exit
@@ -129,16 +140,16 @@ Descargando la ultima version de Spotify, Espera por favor...
   Write-Host 'Ejecutando Instalacion...'
   Start-Process -FilePath "$PWD\SpotifyFullSetup.exe"
   Write-Host 'Deteniendo Spotify, otra vez...'
-  while ((Get-Process -name Spotify -ErrorAction SilentlyContinue) -eq $null) {
-    #waiting until installation complete
-  }
+  while ((Get-Process -name Spotify -ErrorAction SilentlyContinue) -eq $null){
+     #waiting until installation complete
+     }
   Stop-Process -Name Spotify >$null 2>&1
   Stop-Process -Name SpotifyWebHelper >$null 2>&1
   Stop-Process -Name SpotifyFullSetup >$null 2>&1
 }
 
-if (!(test-path $SpotifyDirectory/chrome_elf.dll.bak)) {
-  move $SpotifyDirectory\chrome_elf.dll $SpotifyDirectory\chrome_elf.dll.bak >$null 2>&1
+if (!(test-path $SpotifyDirectory/chrome_elf_bak.dll)){
+	move $SpotifyDirectory\chrome_elf.dll $SpotifyDirectory\chrome_elf_bak.dll >$null 2>&1
 }
 
 Write-Host 'Parcheando Spotify...'
@@ -169,38 +180,59 @@ UI isn't changed.
 }
 #>
 
-$ch = Read-Host -Prompt "Eliminar el marcador de anuncio y el botón de actualizacion a premium. (Y/N) "
+$ch = Read-Host -Prompt "Eliminar el marcador de anuncio y el botón de actualizacion a premium. (Y/N)"
 if ($ch -eq 'y') {
-  Add-Type -Assembly 'System.IO.Compression.FileSystem'
+    $xpuiBundlePath = "$SpotifyApps\xpui.spa"
+    $xpuiUnpackedPath = "$SpotifyApps\xpui\xpui.js"
+    $fromZip = $false
+    
+    # Try to read xpui.js from xpui.spa for normal Spotify installations, or
+    # directly from Apps/xpui/xpui.js in case Spicetify is installed.
+    if (Test-Path $xpuiBundlePath) {
+        Add-Type -Assembly 'System.IO.Compression.FileSystem'
+        Copy-Item -Path $xpuiBundlePath -Destination "$xpuiBundlePath.bak"
 
-  Copy-Item -Path "$SpotifyApps\xpui.spa" -Destination "$SpotifyApps\xpui.spa.bak"
+        $zip = [System.IO.Compression.ZipFile]::Open($xpuiBundlePath, 'update')
+        $entry = $zip.GetEntry('xpui.js')
 
-  $zip = [System.IO.Compression.ZipFile]::Open("$SpotifyApps\xpui.spa", 'update')
-  $entry = $zip.GetEntry('xpui.js')
+        # Extract xpui.js from zip to memory
+        $reader = New-Object System.IO.StreamReader($entry.Open())
+        $xpuiContents = $reader.ReadToEnd()
+        $reader.Close()
 
-  # Extract xpui.js from zip to memory
-  $reader = New-Object System.IO.StreamReader($entry.Open())
-  $xpuiContents = $reader.ReadToEnd()
-  $reader.Close()
+        $fromZip = $true
+    } elseif (Test-Path $xpuiUnpackedPath) {
+        Copy-Item -Path $xpuiUnpackedPath -Destination "$xpuiUnpackedPath.bak"
+        $xpuiContents = Get-Content -Path $xpuiUnpackedPath -Raw
 
-  # Replace ".ads.leaderboard.isEnabled" + separator - '}' or ')'
-  # With ".ads.leaderboard.isEnabled&&false" + separator
-  $xpuiContents = $xpuiContents -replace '(\.ads\.leaderboard\.isEnabled)(}|\))', '$1&&false$2'
+        Write-Host 'Spicetify detectado: es posible que deba reinstalar BTS después de ejecutar "spicetify apply".';
+    } else {
+        Write-Host 'No se pudo encontrar xpui.js, abra un problema en el repositorio Spotifysinanuncios.'
+    }
 
-  # Delete ".createElement(XX,{onClick:X,className:XX.X.UpgradeButton}),X()"
-  $xpuiContents = $xpuiContents -replace '\.createElement\([^.,{]+,{onClick:[^.,]+,className:[^.]+\.[^.]+\.UpgradeButton}\),[^.(]+\(\)', ''
+    if ($xpuiContents) {
+        # Replace ".ads.leaderboard.isEnabled" + separator - '}' or ')'
+        # With ".ads.leaderboard.isEnabled&&false" + separator
+        $xpuiContents = $xpuiContents -replace '(\.ads\.leaderboard\.isEnabled)(}|\))', '$1&&false$2'
+    
+        # Delete ".createElement(XX,{onClick:X,className:XX.X.UpgradeButton}),X()"
+        $xpuiContents = $xpuiContents -replace '\.createElement\([^.,{]+,{onClick:[^.,]+,className:[^.]+\.[^.]+\.UpgradeButton}\),[^.(]+\(\)', ''
+    
+        if ($fromZip) {
+            # Rewrite it to the zip
+            $writer = New-Object System.IO.StreamWriter($entry.Open())
+            $writer.BaseStream.SetLength(0)
+            $writer.Write($xpuiContents)
+            $writer.Close()
 
-  # Rewrite it to the zip
-  $writer = New-Object System.IO.StreamWriter($entry.Open())
-  $writer.BaseStream.SetLength(0)
-  $writer.Write($xpuiContents)
-  $writer.Close()
-
-  $zip.Dispose()
-}
-else {
-  Write-Host @'
-No eliminará el marcador de posición del anuncio ni el botón de actualización.
+            $zip.Dispose()
+        } else {
+            Set-Content -Path $xpuiUnpackedPath -Value $xpuiContents
+        }
+    }
+} else {
+    Write-Host @'
+    No eliminará el marcador de posición del anuncio ni el botón de actualización.
 '@`n
 }
 
