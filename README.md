@@ -7,7 +7,7 @@
     <h5 align="center">Apoya a Spotify comprando Premium</h5>
     <p align="center">
         <strong>Última actualización:</strong> 28 Noviembre 2021<br>
-        <strong>Última versión probada:</strong> Spotify para Windows 1.1.73.517.gbef50fdb
+        <strong>Última versión probada:</strong> Spotify para Windows 1.1.74.631.g0b24d9ad
     </p> 
 </center>
 
