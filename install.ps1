@@ -33,16 +33,16 @@ The Microsoft Store version of Spotify has been detected which is not supported.
 '@`n
   $ch = Read-Host -Prompt "Desintalar la version de Spotify de Windows (Y/N) "
   if ($ch -eq 'y'){
-     Write-Host @'
+      Write-Host @'
 Desintalando Spotify.
 '@`n
-     Get-AppxPackage -Name SpotifyAB.SpotifyMusic | Remove-AppxPackage
+      Get-AppxPackage -Name SpotifyAB.SpotifyMusic | Remove-AppxPackage
   } else{
-     Write-Host @'
+      Write-Host @'
 Saliendo...
 '@`n
-     Pause 
-     exit
+      Pause 
+      exit
     }
 }
 
@@ -140,8 +140,8 @@ Descargando la ultima version de Spotify, Espera por favor...
   Start-Process -FilePath "$PWD\SpotifyFullSetup.exe"
   Write-Host 'Deteniendo Spotify, otra vez...'
   while ((Get-Process -name Spotify -ErrorAction SilentlyContinue) -eq $null){
-     #waiting until installation complete
-     }
+      #waiting until installation complete
+      }
   Stop-Process -Name Spotify >$null 2>&1
   Stop-Process -Name SpotifyWebHelper >$null 2>&1
   Stop-Process -Name SpotifyFullSetup >$null 2>&1
@@ -164,7 +164,7 @@ if ($ch -eq 'y'){
     move $SpotifyApps\zlink.spa $SpotifyApps\zlink.spa.bak >$null 2>&1
     Copy-Item -LiteralPath $remup -Destination "$SpotifyApps"
 } else{
-     Write-Host @'
+      Write-Host @'
 Won't remove Upgrade Button.
 '@`n
 }
@@ -173,7 +173,7 @@ if ($ch -eq 'y'){
     move $SpotifyApps\xpui.spa $SpotifyApps\xpui.spa.bak >$null 2>&1
     Copy-Item -LiteralPath $uipat -Destination "$SpotifyApps"
 } else{
-     Write-Host @'
+      Write-Host @'
 UI isn't changed.
 '@`n
 }
