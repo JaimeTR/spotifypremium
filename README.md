@@ -6,8 +6,8 @@
     <h4 align="center">Bloqueador de anuncios multipropósito y omisión para la aplicación de Spotify de <strong>Windows</strong></h4>
     <h5 align="center">Apoya a Spotify comprando Premium</h5>
     <p align="center">
-        <strong>Última actualización:</strong> 28 Noviembre 2021<br>
-        <strong>Última versión probada:</strong> Spotify para Windows 1.1.74.631.g0b24d9ad
+        <strong>Última actualización:</strong> 02 de Febrero 2022<br>
+        <strong>Última versión probada:</strong> Spotify para Windows 1.1.77.643.g3c4c6fc6
     </p> 
 </center>
 

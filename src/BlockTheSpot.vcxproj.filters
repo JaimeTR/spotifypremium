@@ -13,7 +13,6 @@
     <ClInclude Include="Logger.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="chrome_elf.def" />
     <None Include="..\README.md" />
   </ItemGroup>
 </Project>
