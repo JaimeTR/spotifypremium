@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/31l6ynm0a1fhr2vs/branch/master?svg=true)](https://ci.appveyor.com/project/JaimeTR/Spotifysinanuncios/branch/main)  [![Discord](https://discord.com/api/guilds/807273906872123412/widget.png)](https://discord.gg/)
+[![Build status](https://ci.appveyor.com/api/projects/status/31l6ynm0a1fhr2vs/branch/master?svg=true)](https://ci.appveyor.com/project/JaimeTR/Spotifysinanuncios/branch/main)  [![Discord](https://discord.com/api/guilds/807273906872123412/widget.png)](https://discord.gg/kDYXfJsx4T)
 
 
 <center>
