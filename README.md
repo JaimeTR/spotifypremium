@@ -6,8 +6,9 @@
     <h4 align="center">Bloqueador de anuncios multipropósito y omisión para la aplicación de Spotify de <strong>Windows</strong></h4>
     <h5 align="center">Apoya a Spotify comprando Premium</h5>
     <p align="center">
-        <strong>Última actualización:</strong> 02 de Febrero 2022<br>
-        <strong>Última versión probada:</strong> Spotify para Windows 1.1.77.643.g3c4c6fc6
+        <strong>Última actualización:</strong> 26 de Agosto 2022<br>
+        <strong>Última versión probada:</strong> Spotify para Windows
+1.1.92.647.ga4397eb7
     </p> 
 </center>
 
@@ -23,25 +24,10 @@
 :warning: Este mod es solo para la [**Aplicacion de escritorio**](https://www.spotify.com/download/windows/) de Spotify en Windows y no para la versión de **Microsoft Store**.
 
 ### Instalación / Actualización:
-* Simplemente descargue el [Zip](https://github.com/JaimeTR/Spotifysinanuncios.git)y ejecute [Spotifysinanuncios.bat]  
-
-o
-
-* Ejecute el siguiente comando en PowerShell:
-```ps1
-Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/JaimeTR/Spotifysinanuncios/main/install.ps1' | Invoke-Expression
-```
-
-o
-
-1. Busque su carpeta de instalación de Spotify `%APPDATA%\Spotify`
-2. Descarga  `chrome_elf.zip` de [releases](https://github.com/JaimeTR/Spotifysinanuncios/releases)
-3. Descomprima y reemplace `chrome_elf.dll` y `config.ini` 
+* Simplemente descargue el [Zip](https://github.com/JaimeTR/Spotifysinanuncios.git)y ejecute [SpotXBasic.bat]  
 
 ### Desinstalar:
 * Simplemente ejecute uninstall.bat 
 
-o
 
 * Reinstalar Spotify 
-
