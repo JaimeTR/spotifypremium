@@ -21,13 +21,13 @@
 * Desbloquea la función de salto para cualquier pista
 * Ahora es compatible con la nueva versión Alpha (Nueva interfaz de usuario)
 
-:warning: Este mod es solo para la [**Aplicacion de escritorio**](https://www.spotify.com/download/windows/) de Spotify en Windows y no para la versión de **Microsoft Store**.
+
 
 ### Instalación / Actualización:
 * Simplemente descargue el [Zip](https://github.com/JaimeTR/Spotifysinanuncios.git)y ejecute [SpotXBasic.bat]  
 
 ### Desinstalar:
 * Simplemente ejecute uninstall.bat 
-
-
 * Reinstalar Spotify 
+
+:warning: Este mod es solo para la [**Aplicacion de escritorio**](https://www.spotify.com/download/windows/) de Spotify en Windows y no para la versión de **Microsoft Store**.
