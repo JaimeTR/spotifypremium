@@ -111,7 +111,7 @@
                 "native_description": "Enable music leavebehinds on eligible playlists for desktop",
                 "version": {
                     "fr": "1.2.10",
-                    "to": ""
+                    "to": "1.2.93"
                 }
             },
             "HptoLocationRefactor": {
@@ -417,7 +417,7 @@
                 "native_description": "Allow switching between the new Home Ads format and legacy HPTO format (as opposed to only showing the legacy HPTO format)",
                 "version": {
                     "fr": "1.2.34",
-                    "to": ""
+                    "to": "1.2.94"
                 }
             },
             "LimitedAdsLabelsOnPlaylistCards": {
@@ -512,7 +512,7 @@
                 "native_description": "Enables the Employee Flag to send to Sentry",
                 "version": {
                     "fr": "1.2.44",
-                    "to": ""
+                    "to": "1.2.93"
                 }
             },
             "HomeImpressions": {
@@ -656,7 +656,7 @@
                 "native_description": "Enable Hpto announcements on Home",
                 "version": {
                     "fr": "1.2.65",
-                    "to": ""
+                    "to": "1.2.94"
                 }
             },
             "SponsoredPlaylistV2": {
@@ -778,7 +778,7 @@
                 "name": "bypassApplyUpdateCheck",
                 "version": {
                     "fr": "1.2.84",
-                    "to": ""
+                    "to": "1.2.93"
                 }
             },
             "ad_feedback_in_stream": {
@@ -834,6 +834,38 @@
                 "description": "Enable the new HomeAdCard flexbox layout rewrite",
                 "version": {
                     "fr": "1.2.92",
+                    "to": ""
+                }
+            },
+            "EmbeddedAdHtmlDisplay": {
+                "name": "enableEmbeddedAdHtmlDisplay",
+                "description": "Enable HTML display ads in the embedded NPV",
+                "version": {
+                    "fr": "1.2.94",
+                    "to": ""
+                }
+            },
+            "ImageOptimizationSentrySpanMeasurement": {
+                "name": "enableImageOptimizationSentrySpanMeasurement",
+                "description": "Enable Sentry image resource span attributes for image optimization rollout measurement",
+                "version": {
+                    "fr": "1.2.94",
+                    "to": ""
+                }
+            },
+            "SentryReactRouterV6Routing": {
+                "name": "enableSentryReactRouterV6Routing",
+                "description": "Enable Sentry React Router v6 route instrumentation for Web Player SPA transactions",
+                "version": {
+                    "fr": "1.2.94",
+                    "to": ""
+                }
+            },
+            "SponsoredPlaylistHorizontalVideo": {
+                "name": "enableSponsoredPlaylistHorizontalVideo",
+                "description": "Enables horizontal video layout for sponsored playlist headers on desktop",
+                "version": {
+                    "fr": "1.2.95",
                     "to": ""
                 }
             }
@@ -962,7 +994,7 @@
                 "native_description": "Enable silence trimming in podcasts",
                 "version": {
                     "fr": "1.1.99",
-                    "to": ""
+                    "to": "1.2.93"
                 }
             },
             "PlaybackSpeedIncrements": {
@@ -1664,7 +1696,7 @@
                 "native_description": "Enable reverse sort direction in Your Library",
                 "version": {
                     "fr": "1.2.60",
-                    "to": ""
+                    "to": "1.2.94"
                 }
             },
             "BackendSearchHistory": {
@@ -1910,7 +1942,7 @@
                 "native_description": "Enable BPM and key columns in playlist recommendations",
                 "version": {
                     "fr": "1.2.82",
-                    "to": ""
+                    "to": "1.2.94"
                 }
             },
             "ShareActionBarButton": {
@@ -1982,6 +2014,22 @@
                 "native_description": "When true, shows the Crossfade toggle in Advanced Playback settings. When false, the setting is hidden.",
                 "version": {
                     "fr": "1.2.89",
+                    "to": ""
+                }
+            },
+            "LeaderboardEmptySlotHandling": {
+                "name": "enableLeaderboardEmptySlotHandling",
+                "native_description": "Config for clearing the current leaderboard ad and hiding the leaderboard container when the ad slot returns an empty response",
+                "version": {
+                    "fr": "1.2.94",
+                    "to": ""
+                }
+            },
+            "EntityHeaderNew": {
+                "name": "enableEntityHeaderNew",
+                "native_description": "Enable the new entity header design",
+                "version": {
+                    "fr": "1.2.95",
                     "to": ""
                 }
             }
@@ -2084,7 +2132,7 @@
                 "value": "CONTROL",
                 "version": {
                     "fr": "1.2.31",
-                    "to": ""
+                    "to": "1.2.93"
                 }
             },
             "CanvasNpv": {
