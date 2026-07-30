@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔══════════════════════════════╗
-║ Welcome to SpotX for Windows ║
+║ Welcome to SpotifyPremium for Windows ║
 ╚══════════════════════════════╝"
     Incorrect       = "Hmm. Nepareiza vērtība,"
     Incorrect2      = "lūdzu ievadiet to vēlreiz "
@@ -38,8 +38,8 @@
     ModSpoti        = "Modo Spotify..."
     Error           = "Kļūda"
     FileLocBroken   = "Spotify failu atrašanās vieta ir bojāta, atinstalējiet klientu un palaidiet skriptu vēlreiz"
-    Spicetify       = "Spicetify ir konstatēts, to ir jāinstalē pēc SpotX, atvērt piemērotākos darbībus BUJ lapā? [Y/N]"
-    NoRestore       = "SpotX ir jau instalēts, bet xpui.bak nebija atrasts. `nLūdzu izdzēs Spotify klientu un palaid Install.bat vēlreiz"
+    Spicetify       = "Spicetify ir konstatēts, to ir jāinstalē pēc SpotifyPremium, atvērt piemērotākos darbībus BUJ lapā? [Y/N]"
+    NoRestore       = "SpotifyPremium ir jau instalēts, bet xpui.bak nebija atrasts. `nLūdzu izdzēs Spotify klientu un palaid Install.bat vēlreiz"
     InstallComplete = "Instalācija pabeigta"
     HostInfo        = "hosts failā atrasti nevēlami URL"
     HostBak         = "Dublē hosts.bak ..."

@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔═════════════════════════════╗
-║ Vítejte v SpotX pro Windows ║
+║ Vítejte v SpotifyPremium pro Windows ║
 ╚═════════════════════════════╝"
     Incorrect       = "Ups, nesprávná hodnota,"
     Incorrect2      = "zadejte znovu přes "
@@ -38,8 +38,8 @@
     ModSpoti        = "Upravuji Spotify..."
     Error           = "Chyba"
     FileLocBroken   = "Umístění souborů Spotify je chybné, odinstalujte klienta Spotify a spusťte skript znovu"
-    Spicetify       = "Spicetify nalezeno, musí být nainstalováno po SpotX, otevřít doporučené akce ve FAQ? [Y/N]"
-    NoRestore       = "SpotX byl již nainstalován, xpui.bak se nenašlo. `nProsím odinstalujte klienta Spotify a spusťte Install.bat znovu"
+    Spicetify       = "Spicetify nalezeno, musí být nainstalováno po SpotifyPremium, otevřít doporučené akce ve FAQ? [Y/N]"
+    NoRestore       = "SpotifyPremium byl již nainstalován, xpui.bak se nenašlo. `nProsím odinstalujte klienta Spotify a spusťte Install.bat znovu"
     InstallComplete = "Instalace dokončena"
     HostInfo        = "Nechtěné URL adresy nalezeny v souboru hosts"
     HostBak         = "Zálohuji soubor hosts.bak..."

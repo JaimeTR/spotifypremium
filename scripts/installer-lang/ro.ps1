@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔════════════════════════════════════════╗
-║ Bine ați venit la SpotX pentru Windows ║
+║ Bine ați venit la SpotifyPremium pentru Windows ║
 ╚════════════════════════════════════════╝"
     Incorrect       = "Ups, o valoare incorectă,"
     Incorrect2      = "introduceți din nou prin "
@@ -38,8 +38,8 @@
     ModSpoti        = "Se patchuiește Spotify..."
     Error           = "Eroare"
     FileLocBroken   = "Locația fișierelor Spotify este stricată, dezinstalați clientul și rulați din nou scriptul"
-    Spicetify       = "Spicetify detected, it must be installed after SpotX, open recommended actions in FAQ ? [Y/N]"
-    NoRestore       = "SpotX a fost deja instalat, xpui.bak nu a fost găsit. `nVă rugăm să dezinstalați clientul Spotify și să rulați din nou Install.bat"
+    Spicetify       = "Spicetify detected, it must be installed after SpotifyPremium, open recommended actions in FAQ ? [Y/N]"
+    NoRestore       = "SpotifyPremium a fost deja instalat, xpui.bak nu a fost găsit. `nVă rugăm să dezinstalați clientul Spotify și să rulați din nou Install.bat"
     InstallComplete = "Instalare completă!"
     HostInfo        = "URL-uri nedorite au fost găsite in fișierul hosts"
     HostBak         = "Se efectuează o copie de siguranță a fișierului hosts.bak..."

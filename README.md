@@ -1,192 +1,134 @@
 <p align="center">
-  <a href="https://github.com/SpotX-Official/SpotX/releases"><img src="https://spotx-official.github.io/images/logos/logo.png" /></a>
+  <h1 align="center">SpotifyPremium by JaimeTR 🎵</h1>
 </p>
 
 <p align="center">
-  <a href="https://t.me/spotify_windows_mod"><img src="https://spotx-official.github.io/images/shields/SpotX_Channel.svg"></a>
-  <a href="https://t.me/SpotxCommunity"><img src="https://spotx-official.github.io/images/shields/SpotX_Community.svg"></a>
-  <a href="https://github.com/SpotX-Official/SpotX-Bash"><img src="https://spotx-official.github.io/images/shields/SpotX_for_Mac&Linux.svg"></a>
-  <a href="https://telegra.ph/SpotX-FAQ-09-19"><img src="https://spotx-official.github.io/images/shields/faq.svg"></a>
+  <a href="https://github.com/JaimeTR/spotifypremium"><img src="https://img.shields.io/badge/version-1.2.95-blue"></a>
+  <a href="https://discord.gg/kDYXfJsx4T"><img src="https://img.shields.io/badge/Discord-Join-5865F2"></a>
+  <a href="https://github.com/JaimeTR/spotifypremium/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green"></a>
 </p>
 
-<h2> 
+<h2>
   <div align="center">
-    <b>Patcher for Spotify Desktop Client on Windows </b>
-  </div> 
+    <b>Parcheador para Spotify Desktop en Windows</b>
+  </div>
 </h2>
 
-<p align="center"> •
-  <a href="#requirements">Requirements</a> •
-  <a href="#features">Features</a> •
-  <a href="#installation--update">Installation</a> •
-  <a href="#uninstall">Uninstall</a> •
-  <a href="#faq">FAQ</a> •
-  <a href="#disclaimer">Disclaimer</a>
+<p align="center">
+  <b>Elimina anuncios, activa funciones experimentales y personaliza tu experiencia de Spotify</b>
 </p>
 
-<h1 id="requirements">Requirements</h1>
+<p align="center"> •
+  <a href="#requisitos">Requisitos</a> •
+  <a href="#caracteristicas">Caracteristicas</a> •
+  <a href="#instalacion">Instalacion</a> •
+  <a href="#parametros">Parametros</a> •
+  <a href="#desinstalar">Desinstalar</a> •
+  <a href="#preguntas-frecuentes">FAQ</a> •
+  <a href="#descargo-de-responsabilidad">Disclaimer</a>
+</p>
 
-- **OS:** Windows 7-11
-- **Spotify:** [Official desktop version](https://loadspot.vercel.app/) (Microsoft Store version is not suitable)
-- **PowerShell:** 5.1 and above
+---
 
-<h1 id="features">Features</h1>
+<h1 id="requisitos">📋 Requisitos</h1>
 
-- **Blocks all banner, video, and audio ads** in the client
-- **Hiding podcasts, episodes, and audiobooks** from the homepage (optional)
-- **Block Spotify automatic updates** (optional)
-- **Some native experimental features have been changed**
-- **Analytics sending has been disabled** 
-- **Advanced installation [parameters](https://github.com/SpotX-Official/SpotX/discussions/60)**
+- **SO:** Windows 7, 8, 8.1, 10, 11
+- **Spotify:** [Version oficial de escritorio](https://www.spotify.com/download/windows/) (No sirve la version de Microsoft Store)
+- **PowerShell:** 5.1 o superior (viene con Windows)
 
-<h1 id="installation--update">Installation / Update</h1>
-<h3>Choose installation type:</h3>
-<details>
-<summary><small>Usual installation (New theme)</small></summary><p>
-  
-  #### During installation, you need to confirm some actions, also contains:
-  
-  - New theme activated (new right and left sidebar, some cover change)
-  - All [experimental features](https://github.com/SpotX-Official/SpotX/discussions/50) included
+<h1 id="caracteristicas">🚀 Caracteristicas</h1>
 
-  <h4> </h4>
-  
-#### Just download and run [Install_New_theme.bat](https://raw.githack.com/amd64fox/SpotX/main/Install_New_theme.bat)
+- **Bloquea todos los anuncios** — banners, videos y audio ads
+- **Oculta podcasts, episodios y audiolibros** de la pagina principal (opcional)
+- **Bloquea las actualizaciones automaticas** de Spotify (opcional)
+- **Activa funciones experimentales** como ecualizador, barra lateral derecha, letras, etc.
+- **Deshabilita el envio de telemetria y analiticas**
+- **Tema nuevo o clasico** — elige entre la UI moderna o la clasica (v1.2.13)
+- **Colores estaticos para las letras** de canciones (27 temas disponibles)
+- **Oculta secciones publicitarias** de la pagina principal
+- **Modo desarrollador** — activa las herramientas de desarrollo de Spotify
+- **Sin anuncios en podcast** (modo premium)
 
-or
+<h1 id="instalacion">📥 Instalacion / Actualizacion</h1>
 
-#### Run The following command in PowerShell:
+### Opcion 1: Instalacion normal (tema nuevo)
 
-```ps1
-iex "& { $(iwr -useb 'https://raw.githubusercontent.com/SpotX-Official/SpotX/refs/heads/main/run.ps1') } -new_theme"
-```
+Descarga y ejecuta **[Install_New_theme.bat](Install_New_theme.bat)**
 
-#### mirror
-
-```ps1
-iex "& { $(iwr -useb 'https://spotx-official.github.io/SpotX/run.ps1') } -m -new_theme"
-```
-
-</details>
-  
-
-<details>
-<summary><small>Usual installation (Old theme)</small></summary><p>
-  
-  #### During installation, you need to confirm some actions, also contains:
-  - Forced installation of version 1.2.13 (since the old theme was removed in subsequent versions)
-  - Old theme activated
-  - Automatic blocking of Spotify updates
-  - All [experimental features](https://github.com/SpotX-Official/SpotX/discussions/50) included
-
-  <h4> </h4>
-  
-#### Just download and run [Install_Old_theme.bat](https://raw.githack.com/amd64fox/SpotX/main/Install_Old_theme.bat)
-
-or
-
-#### Run The following command in PowerShell:
+O en PowerShell (como administrador):
 
 ```ps1
-iex "& { $(iwr -useb 'https://raw.githubusercontent.com/SpotX-Official/SpotX/refs/heads/main/run.ps1') } -v 1.2.13.661.ga588f749 -confirm_spoti_recomended_over -block_update_on"
+iex "& { $(iwr -useb 'https://raw.githubusercontent.com/JaimeTR/spotifypremium/main/run.ps1') } -new_theme"
 ```
 
-#### mirror
+### Opcion 2: Instalacion completa automatica
+
+Descarga y ejecuta **[Install_Auto.bat](scripts/Install_Auto.bat)**
+
+O en PowerShell:
 
 ```ps1
-iex "& { $(iwr -useb 'https://spotx-official.github.io/SpotX/run.ps1') } -m -v 1.2.13.661.ga588f749 -confirm_spoti_recomended_over -block_update_on"
+iex "& { $(iwr -useb 'https://raw.githubusercontent.com/JaimeTR/spotifypremium/main/run.ps1') } -confirm_uninstall_ms_spoti -confirm_spoti_recomended_over -podcasts_off -block_update_on -start_spoti -new_theme -adsections_off -lyrics_stat spotify"
 ```
 
-</details>
- 
-<details>
-<summary><small>Full installation</small></summary><p>
-  
-  <h4>Full installation without confirmation, what does it do?</h4> 
-  
-  - New theme activated (new right and left sidebar, some cover change)
-  - Hiding podcasts/episodes/audiobooks from the homepage
-  - Activated [static theme](https://github.com/SpotX-Official/SpotX/discussions/50#discussioncomment-4096066) <kbd>spotify</kbd> for lyrics
-  - Hiding [ad-like sections](https://github.com/SpotX-Official/SpotX/discussions/50#discussioncomment-4478943)
-  - All [experimental features](https://github.com/SpotX-Official/SpotX/discussions/50) included
-  - Removal of Spotify MS if it was found 
-  - Installation of the recommended version of Spotify (if another client has already been found, it will be installed over) 
-  - Blocking of Spotify updates
-  - After the installation is completed, the client will autorun.
-  
-<h4> </h4>
+### Opcion 3: Para usuarios Premium (sin bloqueo de anuncios)
 
-#### Just download and run [Install_Auto.bat](https://raw.githack.com/amd64fox/SpotX/main/scripts/Install_Auto.bat)
+Descarga y ejecuta **[Install_Prem.bat](scripts/Install_Prem.bat)**
 
-or
+### Opcion 4: Tema antiguo (v1.2.13)
 
-#### Run The following command in PowerShell:
+Si prefieres la interfaz clasica de Spotify, descarga y ejecuta **[Install_Old_theme.bat](Install_Old_theme.bat)**
 
-```ps1
-iex "& { $(iwr -useb 'https://raw.githubusercontent.com/SpotX-Official/SpotX/refs/heads/main/run.ps1') } -confirm_uninstall_ms_spoti -confirm_spoti_recomended_over -podcasts_off -block_update_on -start_spoti -new_theme -adsections_off -lyrics_stat spotify"
-```
+---
 
-#### mirror
+<h1 id="parametros">⚙️ Parametros avanzados</h1>
 
-```ps1
-iex "& { $(iwr -useb 'https://spotx-official.github.io/SpotX/run.ps1') } -m -confirm_uninstall_ms_spoti -confirm_spoti_recomended_over -podcasts_off -block_update_on -start_spoti -new_theme -adsections_off -lyrics_stat spotify"
-```
+Puedes combinar multiples parametros al ejecutar el script:
 
-</details>
+| Parametro | Descripcion |
+|-----------|-------------|
+| `-new_theme` | Activa el nuevo tema (barras laterales modernas) |
+| `-podcasts_off` | Oculta podcasts, episodios y audiolibros |
+| `-block_update_on` | Bloquea las actualizaciones automaticas |
+| `-adsections_off` | Oculta secciones similares a anuncios |
+| `-lyrics_stat <color>` | Color estatico para las letras |
+| `-premium` | Modo premium (solo desactiva anuncios en podcasts) |
+| `-devtools` | Activa herramientas de desarrollo |
+| `-cache_limit <MB>` | Limite de cache (500-20000 MB) |
+| `-start_spoti` | Abre Spotify al finalizar |
+| `-no_shortcut` | No crear acceso directo en el escritorio |
+| `-v <version>` | Forzar una version especifica de Spotify |
 
-<details>
-<summary><small>Other types of installations</summary><p>
+Colores disponibles para `-lyrics_stat`: `blue`, `discord`, `forest`, `github`, `orange`, `purple`, `red`, `spotify`, `yellow` y muchos mas.
 
-<details>
-<summary><small>Installation for premium</small></summary><p>
-  
-  #### Usual installation only without ad blocking, for those who have a premium account, also contains:
-  
-  - New theme activated (new right and left sidebar, some cover change)
-  - Disabled only audio ads in podcasts
-  - All [experimental features](https://github.com/SpotX-Official/SpotX/discussions/50) included
+<h1 id="desinstalar">🗑️ Desinstalar</h1>
 
-  <h4> </h4>
-  
-#### Just download and run [Install_Prem.bat](https://raw.githack.com/amd64fox/SpotX/main/scripts/Install_Prem.bat)
+1. Ejecuta **[Uninstall.bat](Uninstall.bat)** (restaura los archivos originales)
+2. O reinstala Spotify desde cero
 
-or
+<h1 id="preguntas-frecuentes">❓ Preguntas frecuentes</h1>
 
-#### Run The following command in PowerShell:
+**¿Funciona con la version de Microsoft Store?**  
+No. Solo funciona con la version de escritorio oficial desde [spotify.com](https://www.spotify.com/download/windows/).
 
-```ps1
-iex "& { $(iwr -useb 'https://raw.githubusercontent.com/SpotX-Official/SpotX/refs/heads/main/run.ps1') } -premium -new_theme"
-```
+**¿Spotify se actualizara y perdera el parche?**  
+Si activas el bloqueo de actualizaciones (`-block_update_on`), Spotify no se actualizara y el parche seguira funcionando.
 
-#### mirror
+**¿Es seguro?**  
+El script modifica archivos locales de Spotify en tu PC. No roba cuentas ni datos. Usalo bajo tu propio riesgo.
 
-```ps1
-iex "& { $(iwr -useb 'https://spotx-official.github.io/SpotX/run.ps1') } -m -premium -new_theme"
-```
+**¿Funciona con Spicetify?**  
+Spicetify debe instalarse **despues** de SpotifyPremium para que ambos funcionen correctamente.
 
-</details>
+**¿Por que mi antivirus lo detecta como amenaza?**  
+Es un falso positivo. El script usa PowerShell para modificar archivos, y algunos antivirus detectan esto heuristicamente como sospechoso. Agrega exclusiones en tu antivirus.
 
-<details>
-<summary><small>Installing with parameters</small></summary><p>
+<h1 id="descargo-de-responsabilidad">⚖️ Descargo de responsabilidad</h1>
 
-You can specify various parameters for a more flexible installation, more [details here](https://github.com/SpotX-Official/SpotX/discussions/60)
+SpotifyPremium es una herramienta que modifica el cliente oficial de Spotify, proporcionada como version de evaluacion. No estoy afiliado ni respaldado por Spotify AB. Usala bajo tu propio riesgo.
 
-</details>
+---
 
-</details>
-
-<h1 id="uninstall">Uninstall</h1>
-
-- Just run [Uninstall.bat](https://raw.githack.com/amd64fox/SpotX/main/Uninstall.bat)
-
-or
-
-- Reinstall Spotify ([Full uninstall Spotify](https://github.com/amd64fox/Uninstall-Spotify) recommended)
-
-<h1 id="faq">FAQ</h1>
-
- Read [FAQ](https://telegra.ph/SpotX-FAQ-09-19)
-
-<h1 id="disclaimer">Disclaimer</h1>
-
-SpotX is a tool that modifies the official Spotify client, provided as an evaluation version — use it at your own risk.
+<p align="center">
+  <b>Creado por <a href="https://github.com/JaimeTR">@JaimeTR</a></b>
+</p>

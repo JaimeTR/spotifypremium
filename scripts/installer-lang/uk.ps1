@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔══════════════════════════════════════╗
-║ Ласкаво просимо до SpotX для Windows ║
+║ Ласкаво просимо до SpotifyPremium для Windows ║
 ╚══════════════════════════════════════╝"
     Incorrect       = "Упс, некоректне значення,"
     Incorrect2      = "введіть знову через "
@@ -38,8 +38,8 @@
     ModSpoti        = "Встановлення патчів на Spotify..."
     Error           = "Помилка"
     FileLocBroken   = "Помилки у шляху до файлів Spotify, видаліть клієнт та запустіть скрипт ще раз."
-    Spicetify       = "Spicetify detected, it must be installed after SpotX, open recommended actions in FAQ ? [Y/N]"
-    NoRestore       = "SpotX вже встановлено, але файл xpui.bak не знайдено. `nБудь-ласка, видаліть клієнт Spotify та запустіть скрипт ще раз."
+    Spicetify       = "Spicetify detected, it must be installed after SpotifyPremium, open recommended actions in FAQ ? [Y/N]"
+    NoRestore       = "SpotifyPremium вже встановлено, але файл xpui.bak не знайдено. `nБудь-ласка, видаліть клієнт Spotify та запустіть скрипт ще раз."
     InstallComplete = "встановлення завершене"
     HostInfo        = "Небажані посилання знайдені у файлі hosts"
     HostBak         = "Бекап hosts.bak..."

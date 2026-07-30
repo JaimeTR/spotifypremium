@@ -1,7 +1,7 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     Welcome         = "
 ╔══════════════════════════════════════╗
-║ Добро пожаловать в SpotX для Windows ║
+║ Добро пожаловать в SpotifyPremium для Windows ║
 ╚══════════════════════════════════════╝"
     Incorrect       = "Ой, некорректное значение,"
     Incorrect2      = "повторите ввод через"
@@ -20,7 +20,7 @@
     OldV3           = "Обновить ? [Y/N]"
     DelOrOver       = "Удалить текущую версию ({0}) или установить поверх? Y [Удалить] / N [Поверх]"
     DelSpotify      = "Удаление Spotify..."
-    NewV2           = "Ваша версия Spotify ({0}) не тестировалась. Стабильная версия для SpotX — {1}"
+    NewV2           = "Ваша версия Spotify ({0}) не тестировалась. Стабильная версия для SpotifyPremium — {1}"
     NewV3           = "Продолжить с {0} (возможны ошибки) ? [Y/N]"
     Recom           = "Установить последнюю версию {0} ? [Y/N]"
     DownSpoti       = "Загружаю и устанавливаю Spotify"
@@ -35,11 +35,11 @@
     ModSpoti        = "Модифицирую Spotify..."
     Error           = "Ошибка"
     FileLocBroken   = "Расположение файлов Spotify нарушено, удалите клиент Spotify и снова запустите скрипт"
-    Spicetify       = "Обнаружен Spicetify, он должен быть установлен после SpotX, открыть рекомендуемые действия в FAQ ? [Y/N]"
+    Spicetify       = "Обнаружен Spicetify, он должен быть установлен после SpotifyPremium, открыть рекомендуемые действия в FAQ ? [Y/N]"
     DefenderPrompt  = "Добавить исключения в Microsoft Defender для предотвращения ложных срабатываний? [Y/N]"
     DefenderAdded   = "Исключения добавлены в Microsoft Defender"
     DefenderFailed  = "Исключения не добавлены в Microsoft Defender"
-    NoRestore       = "SpotX уже был установлен, но файл для восстановления xpui.bak не найден. `nУдалите клиент Spotify и снова запустите Install.bat"
+    NoRestore       = "SpotifyPremium уже был установлен, но файл для восстановления xpui.bak не найден. `nУдалите клиент Spotify и снова запустите Install.bat"
     InstallComplete = "Установка завершена"
     HostInfo        = "В файле hosts найдены нежелательные Url-адреса"
     HostBak         = "Создаю резервную копию hosts.bak..."

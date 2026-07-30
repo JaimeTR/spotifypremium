@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔══════════════════════════════╗
-║ Welcome to SpotX for Windows ║
+║ Welcome to SpotifyPremium for Windows ║
 ╚══════════════════════════════╝"
     Incorrect       = "Упс, нетачна вредност,"
     Incorrect2      = "унесите поново за "
@@ -38,8 +38,8 @@
     ModSpoti        = "Крпљење Spotify-ја..."
     Error           = "Грешка"
     FileLocBroken   = "Локација фајлова Spotify-ја је нарушена, деинсталирајте клијент, па покрените скрипту поново"
-    Spicetify       = "Детектован је Spicetify који мора бити инсталиран након SpotX-а, отвори препоручене акције у FAQ-у? [Y/N]"
-    NoRestore       = "SpotX је већ био инсталиран, xpui.bak није пронађен. `nМолимо деинсталирајте Spotify клијент и покрените Install.bat поново"
+    Spicetify       = "Детектован је Spicetify који мора бити инсталиран након SpotifyPremium-а, отвори препоручене акције у FAQ-у? [Y/N]"
+    NoRestore       = "SpotifyPremium је већ био инсталиран, xpui.bak није пронађен. `nМолимо деинсталирајте Spotify клијент и покрените Install.bat поново"
     InstallComplete = "инсталација завршена"
     HostInfo        = "Нежељени URL-ови пронађени у hosts фајлу"
     HostBak         = "Прављење резервне копије hosts.bak..."

@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔═════════════════════════════╗
-║  歡迎使用 SpotX Windows 版  ║
+║  歡迎使用 SpotifyPremium Windows 版  ║
 ╚═════════════════════════════╝"
     Incorrect       = "糟糕，參數錯誤，"
     Incorrect2      = "請重新輸入 "
@@ -38,8 +38,8 @@
     ModSpoti        = "修補 Spotify..."
     Error           = "錯誤"
     FileLocBroken   = "Spotify 的路徑已損壞，請解除安裝客戶端並重新執行腳本"
-    Spicetify       = "偵測到 Spicetify，它必須在安裝 SpotX 後進行安裝。是否啟用 FAQ 中的建議操作？[Y/N]"
-    NoRestore       = "SpotX 已經安裝，但是找不到 xpui.bak `n請重新安裝 Spotify 客戶端後再運行 Install.bat"
+    Spicetify       = "偵測到 Spicetify，它必須在安裝 SpotifyPremium 後進行安裝。是否啟用 FAQ 中的建議操作？[Y/N]"
+    NoRestore       = "SpotifyPremium 已經安裝，但是找不到 xpui.bak `n請重新安裝 Spotify 客戶端後再運行 Install.bat"
     InstallComplete = "安裝完成"
     HostInfo        = "在 hosts 檔案中發現不需要的網址"
     HostBak         = "正在備份 hosts.bak..."

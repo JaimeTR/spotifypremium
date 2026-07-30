@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔═════════════════════════════════════╗
-║ Chào mừng đến với SpotX cho Windows ║
+║ Chào mừng đến với SpotifyPremium cho Windows ║
 ╚═════════════════════════════════════╝"
     Incorrect       = "Ối, sai giá trị rồi,"
     Incorrect2      = "hãy thử lại "
@@ -38,8 +38,8 @@
     ModSpoti        = "Đang vá Spotify..."
     Error           = "Lỗi"
     FileLocBroken   = "Vị trí các tệp của Spotify đã bị hỏng, gỡ Spotify và chạy lại bản vá"
-    Spicetify       = "Đã phát hiện Spicetify, nó cần phải được cài đặt sau SpotX, bạn có muốn mở những hành động khuyến khích trong mục FAQ ? [Y/N]"
-    NoRestore       = "Đã cài SpotX nhưng không tìm thấy tập tin xpui.bak. `nGỡ Spotify và chạy lại Install.bat"
+    Spicetify       = "Đã phát hiện Spicetify, nó cần phải được cài đặt sau SpotifyPremium, bạn có muốn mở những hành động khuyến khích trong mục FAQ ? [Y/N]"
+    NoRestore       = "Đã cài SpotifyPremium nhưng không tìm thấy tập tin xpui.bak. `nGỡ Spotify và chạy lại Install.bat"
     InstallComplete = "cài đặt hoàn tất"
     HostInfo        = "Tìm thấy các URL không cần thiết trong tệp hosts"
     HostBak         = "Đang sao lưu hosts.bak..."

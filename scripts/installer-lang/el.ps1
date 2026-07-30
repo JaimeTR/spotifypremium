@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔════════════════════════════════════╗
-║ Καλώς ήρθατε στο SpotX για Windows ║
+║ Καλώς ήρθατε στο SpotifyPremium για Windows ║
 ╚════════════════════════════════════╝"
     Incorrect       = "Ουπς, μια λανθασμένη τιμή,"
     Incorrect2      = "εισάγετε μια νέα τιμή "
@@ -38,8 +38,8 @@
     ModSpoti        = "Επιδιόρθωση Spotify..."
     Error           = "Σφάλμα"
     FileLocBroken   = "Η τοποθεσία των αρχείων Spotify είναι κατεστραμμένη, απεγκαταστήστε το πρόγραμμα Spotify και εκτελέστε ξανά το script"
-    Spicetify       = "Spicetify detected, it must be installed after SpotX, open recommended actions in FAQ ? [Y/N]"
-    NoRestore       = "Το SpotX έχει ήδη εγκατασταθεί, το xpui.bak δεν βρέθηκε. `nΠαρακαλώ απεγκαταστήστε το πρόγραμμα Spotify και εκτελέστε ξανά το Install.bat"
+    Spicetify       = "Spicetify detected, it must be installed after SpotifyPremium, open recommended actions in FAQ ? [Y/N]"
+    NoRestore       = "Το SpotifyPremium έχει ήδη εγκατασταθεί, το xpui.bak δεν βρέθηκε. `nΠαρακαλώ απεγκαταστήστε το πρόγραμμα Spotify και εκτελέστε ξανά το Install.bat"
     InstallComplete = "Η εγκατάσταση ολοκληρώθηκε"
     HostInfo        = "Ανεπιθύμητες διευθύνσεις URL βρέθηκαν στο αρχείο hosts"
     HostBak         = "Δημιουργείται αντίγραφο ασφαλείας hosts.bak..."

@@ -1,5 +1,8 @@
 @echo off
 SETLOCAL ENABLEDELAYEDEXPANSION
+echo *****************************
+echo  SpotifyPremium - by JaimeTR
+echo *****************************
 
 set "SPOTIFY_PATH=%Appdata%\Spotify"
 
@@ -23,11 +26,11 @@ if exist "%SPOTIFY_PATH%\Apps\xpui.bak" (
     move "%SPOTIFY_PATH%\Apps\xpui.bak" "%SPOTIFY_PATH%\Apps\xpui.spa" > NUL 2>&1
 ) 
 
-if exist "%temp%\SpotX_Temp*" (
-    for /d %%i in ("%temp%\SpotX_Temp*") do (
+if exist "%temp%\SpotifyPrem_Temp*" (
+    for /d %%i in ("%temp%\SpotifyPrem_Temp*") do (
         rd /s/q "%%i" > NUL 2>&1
     )
 )
 
-echo Patch successfully removed
+echo Parche de SpotifyPremium eliminado con exito
 pause

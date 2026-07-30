@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔═══════════════════════════════╗
-║ Benvenuti a SpotX per Windows ║
+║ Benvenuti a SpotifyPremium per Windows ║
 ╚═══════════════════════════════╝"
     Incorrect       = "Ops, un valore sbagliato,"
     Incorrect2      = "inserisci di nuovo "
@@ -23,7 +23,7 @@
     OldV3           = "Vorresti aggiornare ? [Y/N]"
     DelOrOver       = "Rimuovere la versione attuale {0} o sovrascriverla? Y [Rimuovi] / N [Sovrascrivi]"
     DelSpotify      = "Disinstallando Spotify..."
-    NewV2           = "La tua versione {0} di Spotify non è stata testata. La versione stabile per SpotX è {1}"
+    NewV2           = "La tua versione {0} di Spotify non è stata testata. La versione stabile per SpotifyPremium è {1}"
     NewV3           = "Continuare con {0} (possibili errori) ? [Y/N]"
     Recom           = "Installare l'ultima versione {0} ? [Y/N]"
     DownSpoti       = "Scaricando ed installando Spotify"
@@ -38,8 +38,8 @@
     ModSpoti        = "Patching Spotify..."
     Error           = "Errore"
     FileLocBroken   = "La posizione dei file di Spotify è danneggiata, disinstallare il client di Spotify ed eseguire nuovamente lo script"
-    Spicetify       = "Spicetify rilevato, deve essere installato dopo SpotX, aprire le azioni consigliate nelle FAQ ? [Y/N]"
-    NoRestore       = "SpotX è già stato installato, xpui.bak non trovato. `nPer favore, disinstalla Spotify e riapri il file Install.bat"
+    Spicetify       = "Spicetify rilevato, deve essere installato dopo SpotifyPremium, aprire le azioni consigliate nelle FAQ ? [Y/N]"
+    NoRestore       = "SpotifyPremium è già stato installato, xpui.bak non trovato. `nPer favore, disinstalla Spotify e riapri il file Install.bat"
     InstallComplete = "installazione completata"
     HostInfo        = "Trovati URL non desiderati nel file hosts"
     HostBak         = "Backup di hosts.bak in corso..."

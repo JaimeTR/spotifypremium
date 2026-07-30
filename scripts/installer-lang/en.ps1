@@ -1,7 +1,7 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     Welcome         = "
 ╔══════════════════════════════╗
-║ Welcome to SpotX for Windows ║
+║  SpotifyPremium for Windows - by JaimeTR  ║
 ╚══════════════════════════════╝"
     Incorrect       = "Oops, an incorrect value,"
     Incorrect2      = "enter again through "
@@ -20,7 +20,7 @@
     OldV3           = "Want to update ? [Y/N]"
     DelOrOver       = "Remove the current version ({0}) or install over it? Y [Remove] / N [Install Over]"
     DelSpotify      = "Uninstalling Spotify..."
-    NewV2           = "Your Spotify version ({0}) has not been tested. The stable version for SpotX is {1}"
+    NewV2           = "Your Spotify version ({0}) has not been tested. The stable version for SpotifyPremium is {1}"
     NewV3           = "Continue with {0} (errors may occur) ? [Y/N]"
     Recom           = "Install the latest version {0} ? [Y/N]"
     DownSpoti       = "Downloading and installing Spotify"
@@ -35,11 +35,11 @@
     ModSpoti        = "Patching Spotify..."
     Error           = "Error"
     FileLocBroken   = "Location of Spotify files is broken, uninstall Spotify client and run the script again"
-    Spicetify       = "Spicetify detected, it must be installed after SpotX, open recommended actions in FAQ ? [Y/N]"
+    Spicetify       = "Spicetify detected, it must be installed after SpotifyPremium, open recommended actions in FAQ ? [Y/N]"
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
-    NoRestore       = "SpotX has already been installed, xpui.bak not found. `nPlease uninstall Spotify client and run Install.bat again"
+    NoRestore       = "SpotifyPremium has already been installed, xpui.bak not found. `nPlease uninstall Spotify client and run Install.bat again"
     InstallComplete = "installation completed"
     HostInfo        = "Unwanted URLs found in hosts file"
     HostBak         = "Backing up hosts.bak..."

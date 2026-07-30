@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔════════════════════════════════════╗
-║ SpotX for Windows में आपका स्वागत है  ║
+║ SpotifyPremium for Windows में आपका स्वागत है  ║
 ╚════════════════════════════════════╝"
     Incorrect       = "ओह, एक गलत मान,"
     Incorrect2      = "के माध्यम से फिर से दर्ज करें "
@@ -23,7 +23,7 @@
     OldV3           = "क्या आप अपडेट करना चाहते हैं? [Y/N]"
     DelOrOver       = "मौजूदा वर्जन ({0}) को हटाएँ या इसी पर इंस्टॉल करें? Y [हटाएँ] / N [इसी पर इंस्टॉल करें]"
     DelSpotify      = "Spotify अनइंस्टॉल किया जा रहा है..."
-    NewV2           = "आपके Spotify वर्जन ({0}) को टेस्ट नहीं किया गया है। SpotX के लिए स्टेबल वर्जन {1} है"
+    NewV2           = "आपके Spotify वर्जन ({0}) को टेस्ट नहीं किया गया है। SpotifyPremium के लिए स्टेबल वर्जन {1} है"
     NewV3           = "क्या आप वर्जन {0} के साथ जारी रखना चाहते हैं (इसमें समस्याएं आ सकती हैं)? [Y/N]"
     Recom           = "क्या आप लेटेस्ट वर्जन {0} इंस्टॉल करना चाहते हैं? [Y/N]"
     DownSpoti       = "Spotify डाउनलोड और इंस्टॉल किया जा रहा है"
@@ -38,8 +38,8 @@
     ModSpoti        = "Spotify को पैच किया जा रहा है..."
     Error           = "त्रुटि"
     FileLocBroken   = "Spotify फाइलों का लोकेशन गलत है। कृपया Spotify क्लाइंट को अनइंस्टॉल करें और स्क्रिप्ट फिर से चलाएँ"
-    Spicetify       = "Spicetify मिला है। इसे SpotX के बाद इंस्टॉल किया जाना चाहिए। क्या आप FAQ में सुझाए गए एक्शन देखना चाहते हैं? [Y/N]"
-    NoRestore       = "SpotX पहले से इंस्टॉल है, लेकिन xpui.bak नहीं मिला। `nकृपया Spotify क्लाइंट को अनइंस्टॉल करें और Install.bat को फिर से चलाएँ"
+    Spicetify       = "Spicetify मिला है। इसे SpotifyPremium के बाद इंस्टॉल किया जाना चाहिए। क्या आप FAQ में सुझाए गए एक्शन देखना चाहते हैं? [Y/N]"
+    NoRestore       = "SpotifyPremium पहले से इंस्टॉल है, लेकिन xpui.bak नहीं मिला। `nकृपया Spotify क्लाइंट को अनइंस्टॉल करें और Install.bat को फिर से चलाएँ"
     InstallComplete = "इंस्टॉलेशन पूरा हुआ"
     HostInfo        = "hosts फ़ाइल में कुछ गैर-जरूरी URLs मिले हैं"
     HostBak         = "hosts.bak का बैकअप बनाया जा रहा है..."

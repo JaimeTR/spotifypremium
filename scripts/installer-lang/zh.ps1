@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔════════════════════════════════╗
-║ 欢迎使用 SpotX 的 Windows 版本 ║
+║ 欢迎使用 SpotifyPremium 的 Windows 版本 ║
 ╚════════════════════════════════╝"
     Incorrect       = "糟糕，不正确的参数,"
     Incorrect2      = "请重新输入 "
@@ -38,8 +38,8 @@
     ModSpoti        = "修补 Spotify..."
     Error           = "错误"
     FileLocBroken   = "Spotify 文件已损坏，请请卸载客户端并重新运行脚本"
-    Spicetify       = "检测到 Spicetify，它必须在安装 SpotX 后进行安装。是否启用 FAQ 中的建议操作？ [Y/N]"
-    NoRestore       = "SpotX 已经安装，但是找不到文件 xpui.bak . `n请重新安装 Spotify 客户端后再次运行 install.bat"
+    Spicetify       = "检测到 Spicetify，它必须在安装 SpotifyPremium 后进行安装。是否启用 FAQ 中的建议操作？ [Y/N]"
+    NoRestore       = "SpotifyPremium 已经安装，但是找不到文件 xpui.bak . `n请重新安装 Spotify 客户端后再次运行 install.bat"
     InstallComplete = "安装完成"
     HostInfo        = "在 hosts 文件中发现了不需要的 URL"
     HostBak         = "备份原始 hosts 文件为 hosts.bak..."

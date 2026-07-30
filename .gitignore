@@ -1,1 +1,5 @@
 AGENTS.md
+*.bak
+*.spa
+Temp/
+tmp/

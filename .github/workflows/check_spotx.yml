@@ -1,4 +1,4 @@
-name: Check Spotx for the latest Spotify
+name: Check SpotifyPremium for the latest Spotify
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
-    - name: Run Spotx
+    - name: Run SpotifyPremium
       shell: powershell
       run: |
         $jsonUrl = "https://raw.githubusercontent.com/LoaderSpot/table/refs/heads/main/table/versions.json"
@@ -44,7 +44,7 @@ jobs:
           lyrics_block = $true
         }
         
-        # Run Spotx
-        $spotxUrl = "https://raw.githubusercontent.com/SpotX-Official/SpotX/refs/heads/main/run.ps1"
-        $spotxScript = [scriptblock]::Create((Invoke-WebRequest -UseBasicParsing -Uri $spotxUrl).Content)
-        & $spotxScript @parameters
+        # Run SpotifyPremium
+        $scriptUrl = "https://raw.githubusercontent.com/JaimeTR/spotifypremium/main/run.ps1"
+        $scriptBlock = [scriptblock]::Create((Invoke-WebRequest -UseBasicParsing -Uri $scriptUrl).Content)
+        & $scriptBlock @parameters

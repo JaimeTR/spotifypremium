@@ -20,7 +20,7 @@ jobs:
             const actor = context.payload.sender.login;
             
             // Проверяем, кто выполнил действие (не создателя issue, а того кто сейчас действует)
-            const privilegedUsers = ['amd64fox'];
+            const privilegedUsers = ['JaimeTR'];
             
             if (privilegedUsers.includes(actor)) {
               console.log('Issue #' + issue.number + ' action performed by @' + actor + ' - will not auto-close');
@@ -62,20 +62,20 @@ jobs:
                 '> This issue has been automatically closed because it appears to be related to an **antivirus false positive detection**.\n\n' +
                 '---\n\n' +
                 '## 🔍 What causes false positives?\n\n' +
-                'Different antiviruses may respond differently to installing **SpotX**, as SpotX uses a system interpreter **PowerShell** to modify an application **Spotify**.\n\n' +
+                'Different antiviruses may respond differently to installing **SpotifyPremium**, as it uses a system interpreter **PowerShell** to modify **Spotify**.\n\n' +
                 'Also, most AV use **heuristic analysis**, which looks for threats based on assumptions or by matching its own set of rules. This imperfect method also leads to a high number of false positives.\n\n' +
                 '---\n\n' +
                 '## ✅ What should you do?\n\n' +
                 '### Step 1: Disable Your Antivirus\n' +
                 '> [!IMPORTANT]\n' +
-                '> Before running the SpotX patcher, **temporarily disable or pause your antivirus protection**.\n\n' +
+                '> Before running the SpotifyPremium patcher, **temporarily disable or pause your antivirus protection**.\n\n' +
                 '> [!WARNING]\n' +
                 '> **Signs you need to disable your antivirus:**\n' +
                 '> - The terminal window is forcibly closed\n' +
                 '> - Errors flagging the script as malicious\n' +
                 '> - The bat installation file is deleted\n\n' +
                 '### Step 2: Run the Installation\n' +
-                'Once your antivirus is disabled, proceed with the SpotX installation.\n\n' +
+                'Once your antivirus is disabled, proceed with the installation.\n\n' +
                 '### Step 3: Re-enable Protection\n' +
                 'After the installation is complete, you can turn your antivirus back on. If your AV then marks some files in the Spotify folder, **add them to the exclusion list** of your antivirus.\n\n' +
                 '> [!TIP]\n' +
@@ -83,7 +83,7 @@ jobs:
                 '---\n\n' +
                 '<div align="center">\n\n' +
                 '**🤖 This issue was automatically closed by a bot.**\n\n' +
-                'If you believe your issue isn\'t related to a false positive, please mention **@&#8203;amd64fox**\n\n' +
+                'If you believe your issue isn\'t related to a false positive, please mention **@&#8203;JaimeTR**\n\n' +
                 '</div>';
 
               await github.rest.issues.createComment({

@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔════════════════════════════╗
-║ Witamy w SpotX dla Windows ║
+║ Witamy w SpotifyPremium dla Windows ║
 ╚════════════════════════════╝"
     Incorrect       = "Ups, błędna wartość,"
     Incorrect2      = "wejdź ponownie przez "
@@ -38,8 +38,8 @@
     ModSpoti        = "Łatanie Spotify..."
     Error           = "Błąd"
     FileLocBroken   = "Lokalizacje plików Spotify jest uszkodzona, odinstaluj klienta Spotify i uruchom skrypt ponownie"
-    Spicetify       = "Wykryto Spicetify. Należy zainstalować je po SpotX. Czy otworzyć zalecane działania w FAQ? [Y/N]"
-    NoRestore       = "SpotX został już pobrany, lecz xpui.bak nie został znaleziony. `nProszę odinstalować klienta Spotify i uruchomić Install.bat ponownie"
+    Spicetify       = "Wykryto Spicetify. Należy zainstalować je po SpotifyPremium. Czy otworzyć zalecane działania w FAQ? [Y/N]"
+    NoRestore       = "SpotifyPremium został już pobrany, lecz xpui.bak nie został znaleziony. `nProszę odinstalować klienta Spotify i uruchomić Install.bat ponownie"
     InstallComplete = "instalacja zakończona"
     HostInfo        = "Niepożądane adresy URL znalezione w plikach hosts"
     HostBak         = "Tworzenie kopii zapasowej pliku hosts.bak..."

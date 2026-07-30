@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔══════════════════════════════════╗
-║ Windows için SpotX'e Hoşgeldiniz ║
+║ Windows için SpotifyPremium'e Hoşgeldiniz ║
 ╚══════════════════════════════════╝"
     Incorrect       = "Eyvah, yanlış bir değer,"
     Incorrect2      = "tekrar girin "
@@ -38,8 +38,8 @@
     ModSpoti        = "Spotify'a yama yapılıyor..."
     Error           = "Hata"
     FileLocBroken   = "Spotify dosyalarının konumu bozuk, istemciyi kaldırın ve kodu tekrar çalıştırın"
-    Spicetify       = "Spicetify detected, it must be installed after SpotX, open recommended actions in FAQ ? [Y/N]"
-    NoRestore       = "SpotX zaten kurulmuş, xpui.bak dosyası bulunamadı. `nLütfen Spotify istemcisini kaldırın ve Install.bat dosyasını tekrar çalıştırın"
+    Spicetify       = "Spicetify detected, it must be installed after SpotifyPremium, open recommended actions in FAQ ? [Y/N]"
+    NoRestore       = "SpotifyPremium zaten kurulmuş, xpui.bak dosyası bulunamadı. `nLütfen Spotify istemcisini kaldırın ve Install.bat dosyasını tekrar çalıştırın"
     InstallComplete = "kurulum tamamlandı"
     HostInfo        = "Hosts dosyasında istenmeyen URL'ler bulundu"
     HostBak         = "hosts.bak dosyası yedekleniyor...."

@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔═══════════════════════════╗
-║ SpotX Windows用にようこそ ║
+║ SpotifyPremium Windows用にようこそ ║
 ╚═══════════════════════════╝"
     Incorrect       = "無効な値です"
     Incorrect2      = "再入力してください"
@@ -38,8 +38,8 @@
     ModSpoti        = "Spotify にパッチ適用中..."
     Error           = "エラー"
     FileLocBroken   = "Spotify のファイルの場所が壊れています。Spotify クライアントをアンインストールし再度スクリプトを実行してください"
-    Spicetify       = "Spicetify が検出されましたが、SpotX の後にインストールする必要があります。推奨方法の解説ページを開きますか? [Y/N]"
-    NoRestore       = "SpotXはインストール済みですが xpui.bak が見つかりません。`nSpotify クライアントをアンインストールし、再度 Install.bat を実行してください"
+    Spicetify       = "Spicetify が検出されましたが、SpotifyPremium の後にインストールする必要があります。推奨方法の解説ページを開きますか? [Y/N]"
+    NoRestore       = "SpotifyPremiumはインストール済みですが xpui.bak が見つかりません。`nSpotify クライアントをアンインストールし、再度 Install.bat を実行してください"
     InstallComplete = "インストール完了"
     HostInfo        = "hosts ファイル内に望まない URL があります"
     HostBak         = "hosts.bak にバックアップ中..."

@@ -1,10 +1,10 @@
-[PSCustomObject]@{
+﻿[PSCustomObject]@{
     DefenderPrompt  = "Add exclusions to Microsoft Defender to prevent false positives? [Y/N]"
     DefenderAdded   = "Exclusions added to Microsoft Defender"
     DefenderFailed  = "Microsoft Defender exclusions were not added"
     Welcome         = "
 ╔══════════════════════════════╗
-║ Welcome to SpotX for Windows ║
+║ Welcome to SpotifyPremium for Windows ║
 ╚══════════════════════════════╝"
     Incorrect       = "이런, 잘못된 값이네요,"
     Incorrect2      = "다시 입력해주세요 "
@@ -38,8 +38,8 @@
     ModSpoti        = "Spotify를 패치하는 중..."
     Error           = "오류"
     FileLocBroken   = "Spotify 폴더의 파일이 손상되었습니다, Spotify를 제거하고 이 스크립트를 다시 실행하세요"
-    Spicetify       = "Spicetify detected, it must be installed after SpotX, open recommended actions in FAQ ? [Y/N]"
-    NoRestore       = "SpotX가 이미 설치되었지만, xpui.bak 파일을 찾을 수 없습니다. `nSpotify를 제거하고 Install.bat을 다시 실행해주세요"
+    Spicetify       = "Spicetify detected, it must be installed after SpotifyPremium, open recommended actions in FAQ ? [Y/N]"
+    NoRestore       = "SpotifyPremium가 이미 설치되었지만, xpui.bak 파일을 찾을 수 없습니다. `nSpotify를 제거하고 Install.bat을 다시 실행해주세요"
     InstallComplete = "설치가 완료되었습니다"
     HostInfo        = "hosts 파일에서 불필요한 URL이 감지되었습니다"
     HostBak         = "hosts.bak 백업 파일을 생성하는 중..."
