@@ -113,9 +113,6 @@ param
     [Parameter(HelpMessage = 'Do not add the author watermark "by Jaime TR" in the header.')]
     [switch]$no_watermark,
 
-    [Parameter(HelpMessage = 'Do not add the author watermark "by Jaime TR" in the header.')]
-    [switch]$no_watermark,
-
     [Parameter(HelpMessage = 'Enable right sidebar coloring to match cover color)')]
     [switch]$rightsidebarcolor,
 
