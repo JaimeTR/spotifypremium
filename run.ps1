@@ -421,6 +421,7 @@ function CallLang($clg) {
     try {
         $response = (iwr -Uri (Get-Link -e "/scripts/installer-lang/$clg.ps1") -UseBasicParsing).Content
         if ($mirror) { $response = [System.Text.Encoding]::UTF8.GetString($response) }
+        $response = $response.TrimStart([char]0xFEFF)
         Invoke-Expression $response
     }
     catch {
