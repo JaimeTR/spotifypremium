@@ -1,7 +1,7 @@
 @echo off
 
 :: Line for changing SpotifyPremium parameters, each parameter should be separated by a space
-set param=-new_theme -no_pause
+set param=-new_theme -no_pause -l es
 
 set /p watermark=Quieres la marca de agua del autor (by Jaime TR) en el encabezado? [S/N]: 
 if /i "%watermark%"=="N" set param=%param% -no_watermark
