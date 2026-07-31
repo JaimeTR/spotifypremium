@@ -3,6 +3,9 @@
 :: Line for changing SpotifyPremium parameters, each parameter should be separated by a space
 set param=-new_theme -no_pause
 
+set /p watermark=Quieres la marca de agua del autor (by Jaime TR) en el encabezado? [S/N]: 
+if /i "%watermark%"=="N" set param=%param% -no_watermark
+
 set url='https://raw.githubusercontent.com/JaimeTR/spotifypremium/main/run.ps1'
 set url2='https://raw.githubusercontent.com/JaimeTR/spotifypremium/main/run.ps1'
 set tls=[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12;

@@ -110,6 +110,12 @@ param
     [Parameter(HelpMessage = 'New theme activated (new right and left sidebar, some cover change)')]
     [switch]$new_theme,
 
+    [Parameter(HelpMessage = 'Do not add the author watermark "by Jaime TR" in the header.')]
+    [switch]$no_watermark,
+
+    [Parameter(HelpMessage = 'Do not add the author watermark "by Jaime TR" in the header.')]
+    [switch]$no_watermark,
+
     [Parameter(HelpMessage = 'Enable right sidebar coloring to match cover color)')]
     [switch]$rightsidebarcolor,
 
@@ -4398,6 +4404,8 @@ if ($test_spa) {
     }
     # scrollbar indent fixes
     $css += $webjson.others.'fix-scrollbar'.add
+    # personal branding
+    if (!($no_watermark)) { $css += $webjson.others.'jaime-branding'.add }
 
     if ($null -ne $css ) { extract -counts 'one' -method 'zip' -name 'xpui.css' -add $css }
 

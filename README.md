@@ -4,7 +4,6 @@
 
 <p align="center">
   <a href="https://github.com/JaimeTR/spotifypremium"><img src="https://img.shields.io/badge/version-1.2.95-blue"></a>
-  <a href="https://discord.gg/kDYXfJsx4T"><img src="https://img.shields.io/badge/Discord-Join-5865F2"></a>
   <a href="https://github.com/JaimeTR/spotifypremium/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green"></a>
 </p>
 
